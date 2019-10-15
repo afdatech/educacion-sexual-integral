@@ -1,0 +1,94 @@
+.main-container {
+  background: #fff !important;
+
+  section {
+    padding-left: 0 !important;
+
+    @media only screen and (max-width: 900px) {
+      padding-left: 0 !important;
+    }
+  }
+}
+
+.acceso-plan-medico-obligatorio {
+  background-image: $bg-terrain;
+}
+
+article {
+  margin-left: 0;
+  padding: 15px;
+  //border-bottom: 1px solid #ddd;
+  padding-top: 250px;
+  padding-bottom: 200px;
+  img {
+    max-width: 100%;
+  }
+}
+
+.article-nav {
+  position: fixed;
+  top: 100px;
+  left: 30px;
+  width: 250px;
+  list-style-type: none;
+  padding: 0;
+
+  @media only screen and (max-width: 920px) {
+    display: none;
+  }
+
+  a,
+  b-nav-item {
+    font-size: 19px;
+    padding: 10px 0;
+    transition: all 1s;
+    display: block;
+    &:hover {
+      color: Red;
+    }
+    &:active {
+      color: Red;
+    }
+    &:focus {
+      color: Red;
+    }
+  }
+}
+
+.section-nav {
+  z-index: 3;
+  display: none !important;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 250px;
+  list-style-type: none;
+  padding: 0;
+  bottom: 0;
+  background: #f9f9f9;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  @media only screen and (max-width: 920px) {
+    display: none;
+  }
+
+  li {
+    cursor: pointer;
+    padding-left: 22px;
+    transition: all 1s;
+    border-left: 8px solid transparent;
+
+    &.active {
+      border-left: 8px solid #333;
+    }
+  }
+}
+
+.parallax-parto {
+  background-image: $bg-terrain !important;
+  background-color: #8cc140 !important;
+  background-attachment: fixed;
+}
